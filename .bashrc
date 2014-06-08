@@ -61,7 +61,7 @@ shopt -s cdspell
 #
 # Uncomment to turn on programmable completion enhancements.
 # Any completions you add in ~/.bash_completion are sourced last.
-# [[ -f /etc/bash_completion ]] && . /etc/bash_completion
+[[ -f /etc/bash_completion ]] && . /etc/bash_completion
 
 # History Options
 #
@@ -80,9 +80,9 @@ export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
 # Aliases
 #
 # Some people use a different file for aliases
-# if [ -f "${HOME}/.bash_aliases" ]; then
-#   source "${HOME}/.bash_aliases"
-# fi
+if [ -f "${HOME}/.bash_aliases" ]; then
+  source "${HOME}/.bash_aliases"
+fi
 #
 # Some example alias instructions
 # If these are enabled they will be used instead of any instructions
@@ -125,17 +125,17 @@ alias l='ls -CF'                              #
 # Functions
 #
 # Some people use a different file for functions
-# if [ -f "${HOME}/.bash_functions" ]; then
-#   source "${HOME}/.bash_functions"
-# fi
+if [ -f "${HOME}/.bash_functions" ]; then
+  source "${HOME}/.bash_functions"
+fi
 #
 # Some example functions:
 #
 # a) function settitle
-# settitle () 
-# { 
-#   echo -ne "\e]2;$@\a\e]1;$@\a"; 
-# }
+settitle ()
+{
+  echo -ne "\e]2;$@\a\e]1;$@\a";
+}
 # 
 # b) function cd_func
 # This function defines a 'cd' replacement function capable of keeping, 
