@@ -3,3 +3,5 @@
 	email = SET_ME_LOCALLY
 [color]
 	ui = auto
+[core]
+	excludesfile = /home/ota/.gitignore
