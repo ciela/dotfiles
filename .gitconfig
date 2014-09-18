@@ -1,7 +1,7 @@
 [user]
-	name = SET_ME_LOCALLY
-	email = SET_ME_LOCALLY
+	name = ciela
+	email = zektbach@gmail.com
 [color]
 	ui = auto
 [core]
-	excludesfile = /home/ota/.gitignore
+	excludesfile = /Users/ota_kazuhiro/.gitignore
