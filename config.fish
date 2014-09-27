@@ -14,3 +14,6 @@ set fish_plugins brew ec2 peco sublime
 
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
+
+# direnv
+eval (direnv hook fish)
