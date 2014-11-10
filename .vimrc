@@ -38,3 +38,18 @@ set fileencodings+=,ucs-2le,ucs-2,utf-8
 
 " 色付け
 colorscheme darkblue
+
+" omnifunc
+setlocal omnifunc=syntaxcomplete#Complete
+
+" Golang
+" 事前に
+" $ go get github.com/nsf/gocode
+" しておく必要あり
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
+exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
+set completeopt=menu,preview
