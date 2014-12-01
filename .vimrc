@@ -1,8 +1,9 @@
+scriptencoding utf-8
+
 set nocp
 set fileformats=unix,dos,mac
 set number
 set smartcase
-syntax on
 set backspace=indent,eol,start
 
 "--------------------------------------------------
@@ -53,3 +54,5 @@ filetype plugin indent on
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
 exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
 set completeopt=menu,preview
+
+syntax on
