@@ -5,6 +5,7 @@ set fileformats=unix,dos,mac
 set number
 set smartcase
 set backspace=indent,eol,start
+set paste
 
 "--------------------------------------------------
 "表示関係
