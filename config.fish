@@ -17,3 +17,6 @@ set fish_plugins brew ec2 peco sublime
 
 # direnv
 eval (direnv hook fish)
+
+# Set EDITOR
+set -x EDITOR vim
