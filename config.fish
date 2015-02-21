@@ -18,5 +18,6 @@ set fish_plugins brew ec2 peco sublime
 # direnv
 eval (direnv hook fish)
 
-# Set EDITOR
+# Set environment variables
 set -x EDITOR vim
+set -x PATH $GOPATH/bin $PATH
